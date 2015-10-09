@@ -1,0 +1,44 @@
+
+
+{{left_sidebar_enabled,right_sidebar_enabled=False,('message' in globals())}}
+{{extend 'layout.html'}}
+<center>
+<h1>MY WEB</h1>
+<img src=https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT7hHQDHt3yCe_Z1nn6UfwKvORkMqWSyHr_KdnMlUHvxZK5lUuh5VSnbxA
+</center>
+
+{{letras = ['a', 'b', 'c']}}
+<ul>
+{{for letras in letras:}}<li>{{=letras}}</li>{{pass}}
+</ul>
+
+{{def itemize1(link): return LI(A(link, _href="http://" + link))}}
+<ul>
+{{=itemize1('www.google.com')}}
+</ul>
+<html><body>
+{{for x in range(10):}}{{=x}}hola<br />{{pass}}
+</body></html>
+
+<fieldset class="prueba">Alto:<input name="altura" /></fieldset>
+<p>
+<form enctype="multipart/form-data" action="" method="post">
+<input type="submit" /></form>
+</p>
+<ol id="0" class="prueba"><li>&lt;hola&gt;</li><li><b>mundo</b></li></ol>
+<select>
+  <option value="a">a</option>
+  <optgroup>
+    <option value="b">b</option>
+    <option value="c">c</option>
+  </optgroup>
+</select>
+<select id="0" class="prueba">
+   <option value="&lt;hola&gt;"><b>Hola</b></option>
+   <option value="&lt;b&gt;mundo&lt;/b&gt;"><b>mundo</b></option>
+</select>
+<table><tr><td>a</td><td>b</td></tr><tr><td>c</td><td>d</td></tr></table>
+<hr />
+
+
+
